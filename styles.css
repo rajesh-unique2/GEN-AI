@@ -124,7 +124,7 @@ div.stButton > button[data-testid="baseButton-secondary"]:hover {
     border-radius: 15px;
 }
 
-/* Text input styling */
+/* Text input styling - CHANGED: Text color to white */
 .stTextInput>div>div>input {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
@@ -134,14 +134,14 @@ div.stButton > button[data-testid="baseButton-secondary"]:hover {
     font-size: 16px;
     transition: all 0.2s ease;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    color: black!important;
+    color: white !important; /* Changed from black to white */
 }
 
 .stTextInput>div>div>input:focus {
     border-color: #DD2476;
     box-shadow: 0 0 15px rgba(221, 36, 118, 0.2);
     transform: translateY(-1px);
-    color: black!important;
+    color: white !important; /* Changed from black to white */
 }
 
 /* Label styling */
@@ -291,7 +291,7 @@ div.stButton > button[data-testid="baseButton-secondary"]:hover {
     50% { transform: scale(1.3); opacity: 0.7; }
 }
 
-/* Quiz Styling - DARK TEXT COLORS */
+/* Quiz Styling - CHANGED: Radio button text color to white */
 .stRadio > div {
     background: black !important;
     border-radius: 10px;
@@ -299,7 +299,7 @@ div.stButton > button[data-testid="baseButton-secondary"]:hover {
     margin: 8px 0;
     border: 2px solid transparent;
     transition: all 0.2s ease;
-    color: #ffffff !important;
+    color: white !important; /* Added white text color */
 }
 
 .stRadio > div:hover {
@@ -308,7 +308,7 @@ div.stButton > button[data-testid="baseButton-secondary"]:hover {
 }
 
 .stRadio label {
-    color: white !important;
+    color: white !important; /* Changed to white */
     font-weight: 500 !important;
 }
 
@@ -375,27 +375,28 @@ div[data-testid="stExpander"] details summary {
     font-weight: 600 !important;
 }
 
-/* Radio button text color */
+/* Radio button text color - CHANGED: All to white */
 .st-bd {
-    color: #2c3e50 !important;
+    color: white !important; /* Changed from #2c3e50 to white */
 }
 
 .st-bc {
-    color: #2c3e50 !important;
+    color: white !important; /* Changed from #2c3e50 to white */
 }
 
 /* Ensure all text in quiz is visible */
 .st-bq {
-    color: #2c3e50 !important;
+    color: white !important; /* Changed from #2c3e50 to white */
 }
 
 .st-br {
-    color: #2c3e50 !important;
+    color: white !important; /* Changed from #2c3e50 to white */
 }
 
 .st-bs {
-    color: #2c3e50 !important;
+    color: white !important; /* Changed from #2c3e50 to white */
 }
+
 /* Image Uploader Styling */
 .image-uploader {
     background: rgba(255, 255, 255, 0.15);
@@ -458,6 +459,7 @@ div[data-testid="stExpander"] details summary {
     border-radius: 5px;
     margin: 10px 0;
 }
+
 /* Language Selector Styling */
 .stSelectbox > div > div {
     background: rgba(255, 255, 255, 0.9) !important;
@@ -503,7 +505,8 @@ audio:focus {
     outline: 2px solid #2196F3;
     outline-offset: 2px;
 }
-/* ===== NEW FEATURES CSS - Add to your existing styles.css ===== */
+
+/* ===== NEW FEATURES CSS ===== */
 
 /* Share Options Styling */
 .share-container {
@@ -822,7 +825,6 @@ audio {
 .stSelectbox > div,
 .stTextArea > div > div > textarea {
     transition: all 0.3s ease !important;
-  
 }
 
 /* Enhanced focus states */
@@ -830,9 +832,10 @@ audio {
 .stSelectbox > div > div:focus-within {
     outline: none !important;
     box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1) !important;
-      color: white;
+    color: white !important; /* Added white text color */
 }
-/* ===== AUDIO BUTTON CSS - Add to your existing styles.css ===== */
+
+/* ===== AUDIO BUTTON CSS ===== */
 
 /* Audio Section Container */
 .audio-section-container {
@@ -872,6 +875,7 @@ div.stButton > button[data-testid="baseButton-primary"] {
     position: relative !important;
     overflow: hidden !important;
 }
+
 /* Text Area Styling - White Text */
 .stTextArea textarea {
     color: white !important;
